@@ -11,9 +11,9 @@ const Nav = () => {
 
     const classes = useStyles();
     return <>
-        <div className={classes.root}>
-            <AppBar position="static">
-                <Toolbar>
+        <div className={classes.root} >
+            <AppBar position="static" style={{background: "black"}}>
+                <Toolbar style={{justifyContent: "center"}} >
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
