@@ -1,31 +1,27 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Fingerprint from '@material-ui/icons/Fingerprint';
+import { Tabs, Tab, Container } from '@material-ui/core';
+
 
 const Nav = () => {
 
     return <>
-        <div >
+        <div >        
             <AppBar>
                 <Toolbar style={{ justifyContent: "center" }} >
                     <IconButton edge="start" color="inherit" aria-label="menu">
-                        <Fingerprint style={{fontSize: "2.5rem"}} />
+                        <Fingerprint />
                     </IconButton>
-                    <Button color="inherit">
-                        Projects
-                    </Button>
-                    <Button color="inherit">
-                        Technologies
-                    </Button>
-                    <Button color="inherit">
-                        Contact
-                    </Button>
+                    <Tabs indicatorColor="secondary">
+                        <Tab href="#" label="Projects"></Tab>
+                        <Tab href="#" label="Technologies"></Tab>
+                        <Tab href="#" label="Contact"></Tab>
+                    </Tabs>
                 </Toolbar>
-            </AppBar>
+            </AppBar>           
         </div>
     </>
 
