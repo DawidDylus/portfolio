@@ -1,17 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Nav from '../components/nav/Nav'
+import Nav from '../components/nav/Nav';
+import Intro from '../components/introduction/Intro';
 
 export default function Home() {
 
-  return (
-    <>
-      <Nav />
+  return <>
+      <Nav/>
 
-      <div className={styles.container}>
-
-      </div>
+      <Intro></Intro>
+     
     </>
-  )
+  
 }
