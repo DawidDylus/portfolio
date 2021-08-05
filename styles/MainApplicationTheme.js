@@ -34,6 +34,7 @@ export const MainApplicationTheme = createTheme({
             root: {
                 width: "2.5rem",
                 height: "2.5rem",
+                borderRadius: "100%",
                 '@media (max-width: 433px)': {
                     width: "1.5rem",
                     height: "1.5rem",
@@ -51,14 +52,13 @@ export const MainApplicationTheme = createTheme({
                     padding: "1px"
                 }
             }
-        }
+        },   
     },
     props: {
         MuiAppBar: {
             position: "static",
 
-        }
-
+        },
     }
 
 })
