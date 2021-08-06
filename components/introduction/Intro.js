@@ -4,18 +4,19 @@ import Box from '@material-ui/core/Box';
 import IconButton from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Link from '@material-ui/core/Link'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const Intro = () => {
 
 
     return <>
-        <Box            
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            minHeight="90vh"
-            component="span"
-            container
+        <div   
+        style={{
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            minHeight:"90vh",
+        }}          
         >
             <Grid >
                 <Typography variant="h1">
@@ -32,11 +33,14 @@ const Intro = () => {
                     <IconButton component={Link} href="https://github.com/DawidDylus" style={{ borderRadius: 100 }}>
                         <GitHubIcon />
                     </IconButton>
+               
+                    <IconButton component={Link} href="https://www.linkedin.com/in/dawid-dylus-8aab84145/" style={{ borderRadius: 100 }}>
+                        <LinkedInIcon style={{ color: "#0e76a8" }}/>
+                    </IconButton>
                 </Grid>
 
-
             </Grid>
-        </Box>
+        </div>
     </>
 
 

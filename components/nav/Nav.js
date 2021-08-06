@@ -3,17 +3,18 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Fingerprint from '@material-ui/icons/Fingerprint';
-import { Tabs, Tab, Container } from '@material-ui/core';
+import { Tabs, Tab, Typography } from '@material-ui/core';
 
 
 const Nav = () => {
 
     return <>
-        <div >        
+        <div >
             <AppBar>
                 <Toolbar style={{ justifyContent: "center" }} >
-                    <IconButton edge="start" color="inherit" aria-label="menu">
+                    <IconButton edge="start" color="inherit" aria-label="menu">                       
                         <Fingerprint />
+                        <Typography>Portfolio</Typography>
                     </IconButton>
                     <Tabs indicatorColor="secondary">
                         <Tab href="#" label="Projects"></Tab>
@@ -21,7 +22,7 @@ const Nav = () => {
                         <Tab href="#" label="Contact"></Tab>
                     </Tabs>
                 </Toolbar>
-            </AppBar>           
+            </AppBar>
         </div>
     </>
 
