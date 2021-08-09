@@ -9,16 +9,44 @@ export const MainApplicationTheme = createTheme({
         },
     },
     typography: {
-        htmlFontSize: 13,
-       /* '@media (max-width: 433px)': {
-            fontSize: "0.5rem",
-        },
-        '@media (min-width: 2000px)': {
-            fontSize: "2.5rem",
-        }*/
+        htmlFontSize: 13, 
     },
     spacing: 10,
     overrides: {
+        MuiTypography: {
+            root: {
+                color: "#bbb",
+            },
+            body1: {
+
+                '@media (max-width: 433px)': {
+                    fontSize: "0.7rem",
+                },
+                '@media (min-width: 2000px)': {
+                    fontSize: "2.5rem",
+                },
+
+            },
+            h1: {
+
+                '@media (max-width: 433px)': {
+                    fontSize: "2.7rem",
+                },
+                '@media (min-width: 2000px)': {
+                    fontSize: "10rem",
+                }
+            },
+            h4: {
+
+                '@media (max-width: 433px)': {
+                    fontSize: "1.3rem",
+                    padding: "1rem"
+                },
+                '@media (min-width: 2000px)': {
+                    fontSize: "4rem",
+                }
+            },
+        },
         MuiTab: {
             root: {
                 fontSize: "1.25rem",
@@ -40,7 +68,6 @@ export const MainApplicationTheme = createTheme({
             }
         },
         MuiIconButton: {
-
             root: {
                 '@media (max-width: 433px)': {
                     padding: "0px",
@@ -66,6 +93,7 @@ export const MainApplicationTheme = createTheme({
                 '@media (min-width: 2000px)': {
                     width: "5rem",
                     height: "5rem",
+                    marginLeft: "5rem",
                 }
             }
         },
@@ -78,12 +106,12 @@ export const MainApplicationTheme = createTheme({
         },
         MuiContainer: {
             root: {
-                background: "#212d45",
+                background: "#1f1f1f",
                 height: "100vh",
             }
         }
     },
-    props: {
+    props: {       
         MuiAppBar: {
             position: "static",
 
@@ -91,7 +119,8 @@ export const MainApplicationTheme = createTheme({
         MuiContainer: {
             maxWidth: false,
             disableGutters: true, // left right padding disabled
-        }
+        }       
     }
+    
 
 })

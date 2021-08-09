@@ -23,12 +23,12 @@ const Intro = () => {
                     Dawid Dylus
                 </Typography>
 
-                <Typography variant="h4">
+                <Typography variant="h4" align="center">
                     Fullstack developer
                 </Typography>
 
                 <br></br>
-                <br></br>
+                               
                 <Grid>
                     <IconButton component={Link} href="https://github.com/DawidDylus" style={{ borderRadius: 100 }}>
                         <GitHubIcon />
