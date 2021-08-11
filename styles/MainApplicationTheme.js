@@ -1,5 +1,4 @@
-import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
-import { WrapText } from "@material-ui/icons";
+import { createTheme } from "@material-ui/core/styles";
 
 export const MainApplicationTheme = createTheme({
     palette: {
@@ -106,16 +105,12 @@ export const MainApplicationTheme = createTheme({
         },
         MuiContainer: {
             root: {
-                background: "#1f1f1f",
+                background: "#2a2a2a",
                 height: "100vh",
             }
         }
     },
-    props: {       
-        MuiAppBar: {
-            position: "static",
-
-        },
+    props: {             
         MuiContainer: {
             maxWidth: false,
             disableGutters: true, // left right padding disabled
